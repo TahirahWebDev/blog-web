@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-let posts = [
+const posts = [
   {
     id: '1',
     title: 'Exploring the World of AI',

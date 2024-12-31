@@ -44,7 +44,7 @@ export default function PostPage({ params }: { params: Promise<{ id: string }> }
         } else {
           setError(true);
         }
-      } catch (err) {
+      } catch {
         setError(true);
       } finally {
         setLoading(false);

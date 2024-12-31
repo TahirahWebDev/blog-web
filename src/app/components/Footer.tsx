@@ -1,6 +1,7 @@
 'use client';
 
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link'; // Import Link component from Next.js
 
 export default function Footer() {
   return (
@@ -68,24 +69,24 @@ export default function Footer() {
             <h2 className="text-lg font-semibold text-teal-100 mb-4">Quick Links</h2>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-teal-100 text-gray-300">
+                <Link href="/" className="hover:text-teal-100 text-gray-300">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-teal-100 text-gray-300">
+                <Link href="/about" className="hover:text-teal-100 text-gray-300">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-teal-100 text-gray-300">
+                <Link href="/contact" className="hover:text-teal-100 text-gray-300">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/posts" className="hover:text-teal-100 text-gray-300">
+                <Link href="/posts" className="hover:text-teal-100 text-gray-300">
                   Blog Posts
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

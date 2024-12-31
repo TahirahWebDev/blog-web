@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function PostCard({
   id,
@@ -17,7 +18,7 @@ export default function PostCard({
 }) {
   return (
     <div className="p-4 bg-white rounded shadow-lg">
-      <img
+      <Image
         src={imageUrl}
         alt={title}
         className="w-full h-40 object-cover rounded mb-4"
